@@ -32,8 +32,31 @@ html {
 }
 
 .header {
-    background-color: #006157;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
+
+.header-search {
+    background-color: lightgreen;
+}
+
+.header-info {
+    background-color: lightcoral
+}
+
+.header-icon {
+    color: black;
+    height: 40px;
+    width: 40px;
+}
+
+.profile-picture {
+    height: 60px;
+}
+
+
 
 .sidebar {
     background-color: #209deb;
