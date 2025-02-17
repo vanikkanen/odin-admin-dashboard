@@ -34,9 +34,10 @@ html {
 .header {
     background-color: white;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr minmax(300px, 1fr);
     grid-template-rows: 1fr 1fr;
     margin: 8px 32px;
+    gap: 0px 24px;
 }
 
 .header-search {
@@ -52,7 +53,7 @@ html {
     width: 40px;
 }
 
-.header-search .header-icon:hover {
+.header-icon:hover {
     cursor: pointer;
 }
 
@@ -74,26 +75,55 @@ html {
 
 
 .header-info {
+    justify-self: end;
     display: flex;
     align-items: center;
-    background-color: lightcoral
+    gap: 32px;
+    min-width: auto;
 }
 
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    text-decoration: none;
+    color: black;
+}
 
+.profile-picture {
+    height: 60px;
+    border-radius: 30px;
+}
+
+.user-profile .username {
+    font-size: clamp(16px, calc(16px + (28 - 16) * ((100vw - 360px) / 1560)), 28px);
+    font-weight: bold;
+}
 
 .header-user-greeting {
-    background-color: lightsalmon;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.header-user-greeting .profile-picture {
+    height: 80px;
+    border-radius: 40px;
+}
+
+.user-greeting-container {
+    text-align: start;
+}
+
+.user-info {
+    font-size: clamp(16px, calc(16px + (28 - 16) * ((100vw - 360px) / 1560)), 28px);;
 }
 
 .header-actions {
     background-color: lightseagreen;
 }
 
-
-
-.profile-picture {
-    height: 60px;
-}
 
 
 
