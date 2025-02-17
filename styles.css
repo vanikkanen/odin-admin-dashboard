@@ -40,6 +40,7 @@ html {
     gap: 0px 24px;
 }
 
+
 .header-search {
     display: flex;
     align-items: center;
@@ -71,7 +72,6 @@ html {
     border: 2px solid lightgray;
     outline: none;
 }
-
 
 .header-info {
     justify-self: end;
@@ -137,6 +137,11 @@ html {
     font-weight: bold;
 }
 
+.header-button:hover {
+    cursor: pointer;
+    background-color: #1078b2; /* Darker blue shade for depth */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Softer, subtle shadow */
+}
 
 .sidebar {
     background-color: #209deb;
@@ -205,5 +210,5 @@ html {
 }
 
 .content {
-    background-color: #7E1DC3;
+    background-color: whitesmoke;
 }
