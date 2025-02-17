@@ -36,14 +36,13 @@ html {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    margin: 8px 32px;
 }
 
 .header-search {
-    background-color: lightgreen;
-}
-
-.header-info {
-    background-color: lightcoral
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .header-icon {
@@ -51,6 +50,41 @@ html {
     height: 40px;
     width: 40px;
 }
+
+.search-bar {
+    flex: 1;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 16px;
+    height: 32px;
+    max-width: 900px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-bar:focus {
+    border: 2px solid lightgray;
+    outline: none;
+}
+
+
+.header-info {
+    display: flex;
+    align-items: center;
+    background-color: lightcoral
+}
+
+
+
+.header-user-greeting {
+    background-color: lightsalmon;
+}
+
+.header-actions {
+    background-color: lightseagreen;
+}
+
+
 
 .profile-picture {
     height: 60px;
