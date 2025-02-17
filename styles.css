@@ -34,9 +34,9 @@ html {
 .header {
     background-color: white;
     display: grid;
-    grid-template-columns: 2fr minmax(300px, 1fr);
+    grid-template-columns: auto 450px;
     grid-template-rows: 1fr 1fr;
-    margin: 8px 32px;
+    padding: 8px 32px;
     gap: 0px 24px;
 }
 
@@ -63,7 +63,6 @@ html {
     background-color: whitesmoke;
     border-radius: 16px;
     height: 32px;
-    max-width: 900px;
     text-align: center;
     font-family: "Roboto", sans-serif;
 }
