@@ -121,10 +121,22 @@ html {
 }
 
 .header-actions {
-    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    justify-self: end;
 }
 
-
+.header-button {
+    height: 3rem;
+    width: 8rem;
+    border-radius: 25px;
+    background-color: #209deb;
+    border: 1px solid lightgray;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
 
 
 .sidebar {
