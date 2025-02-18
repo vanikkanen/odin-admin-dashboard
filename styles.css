@@ -217,7 +217,7 @@ html {
     gap: 32px;
 }
 
-.content-container {
+.content-container, .content-announcement , .content-trending {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -273,15 +273,9 @@ html {
     margin-top: auto;
 }
 
-.content-announcement {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.announcement-container {
+.announcement-container, .trending-container {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
     background-color: white;
     border: 1px solid lightgray;
     border-radius: 10px;
@@ -295,7 +289,7 @@ html {
 .meta-content-container {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: 48px;
 }
 
 .announcement-container > *:not(:last-child) {
@@ -320,7 +314,18 @@ html {
 }
 
 .trending {
+    display: grid;
+    grid-template-columns: 50px auto;
     background-color: lightcyan;
+    gap: 32px;
+}
+
+.trending .user-info {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 16px;
+    justify-content: center;
 }
 
 .card-icon {
