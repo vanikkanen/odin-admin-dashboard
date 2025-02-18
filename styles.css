@@ -251,6 +251,12 @@ html {
 
     display: flex;
     flex-direction: column;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background-color: lightgreen;
+    box-shadow: 5px 5px 5px gray;
 }
 
 .card-title {
@@ -289,7 +295,7 @@ html {
 .meta-content-container {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 60px;
 }
 
 .announcement-container > *:not(:last-child) {
@@ -316,7 +322,6 @@ html {
 .trending {
     display: grid;
     grid-template-columns: 50px auto;
-    background-color: lightcyan;
     gap: 32px;
 }
 
@@ -326,6 +331,13 @@ html {
     text-align: start;
     font-size: 16px;
     justify-content: center;
+}
+
+.trending .user-tag {
+    font-weight: bold;
+}
+.trending .user-project {
+    color: gray;
 }
 
 .card-icon {
